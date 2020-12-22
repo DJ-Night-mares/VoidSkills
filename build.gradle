@@ -3,13 +3,8 @@ buildscript {
         maven { url = 'https://files.minecraftforge.net/maven' }
         jcenter()
         mavenCentral()
-        maven { // JEI
-            name "JEI"
-            url "http://dvs1.progwml6.com/files/maven"
-        }
-        maven { // IntWheel
-            name "IntWheel"
-            url "http://maven.k-4u.nl"
+        maven {
+            url = 'https://dvs1.progwml6.com/files/maven'
         }
         maven { // TOP
             name 'tterrag maven'
@@ -21,12 +16,10 @@ buildscript {
         }
 
     }
-
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
     }
 }
-
 apply plugin: 'net.minecraftforge.gradle'
 
 group = 'com.djnightmares'
@@ -99,7 +92,9 @@ dependencies {
 
     // The 'provided' configuration is for optional dependencies that exist at compile-time but might not at runtime.
     // provided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
-
+    testRuntimeOnly group: "mezz.jei", name: "jei_1.12.2", version: "4.16.1.302"
+    testRuntimeOnly group: "mcjty.theoneprobe", name: "TheOneProbe-1.12", version: "1.12-1.4.14-7"
+    testRuntimeOnly group: "cofh", name: "RedstoneFlux", version: "1.12-2.0.0.1:universal"
     // These dependencies get remapped to your current MCP mappings
     // deobf 'com.mod-buildcraft:buildcraft:6.0.8:dev'
 
