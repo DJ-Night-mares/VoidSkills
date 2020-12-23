@@ -92,9 +92,9 @@ dependencies {
 
     // The 'provided' configuration is for optional dependencies that exist at compile-time but might not at runtime.
     // provided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
-    testRuntimeOnly group: "mezz.jei", name: "jei_1.12.2", version: "4.16.1.302"
-    testRuntimeOnly group: "mcjty.theoneprobe", name: "TheOneProbe-1.12", version: "1.12-1.4.14-7"
-    testRuntimeOnly group: "cofh", name: "RedstoneFlux", version: "1.12-2.0.0.1:universal"
+//    testRuntimeOnly group: "mezz.jei", name: "jei_1.12.2", version: "4.16.1.302"
+//    testRuntimeOnly group: "mcjty.theoneprobe", name: "TheOneProbe-1.12", version: "1.12-1.4.14-7"
+//    testRuntimeOnly group: "cofh", name: "RedstoneFlux", version: "1.12-2.0.0.1:universal"
     // These dependencies get remapped to your current MCP mappings
     // deobf 'com.mod-buildcraft:buildcraft:6.0.8:dev'
 
